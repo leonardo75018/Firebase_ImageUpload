@@ -4,6 +4,10 @@ import { auth } from "./firebase"
 import Login from "./components/Login"
 import Nav from "./components/Nav"
 import Formations from "./components/Formations"
+import Equipe from "./components/Equipe"
+import Partenaires from "./components/Partenaires"
+import Benevoles from "./components/Benevoles"
+
 import "./App.css"
 
 
@@ -29,8 +33,9 @@ function App() {
       <Nav firebaseUser={firebaseUser} />
       <Route path="/login" exact> <Login /> </Route>
       <Route path="/formations" exact> <Formations /> </Route>
-      <Route path="/equipe" exact> Equipe </Route>
-      <Route path="/partenaires" exact> partenaires </Route>
+      <Route path="/equipe" exact> <Equipe /> </Route>
+      <Route path="/partenaires" exact> <Partenaires /> </Route>
+      <Route path="/benevoles" exact> <Benevoles /> </Route>
     </Router>
   ) : (
       <p>Loading...</p>

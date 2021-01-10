@@ -21,6 +21,7 @@ const Nav = (props) => {
                 <div className="d-flex">
                     <Link className="btn btn-dark mr-2" to="/formations" exact>Formations</Link>
                     <Link className="btn btn-dark mr-2" to="/equipe" exact>Equipe</Link>
+                    <Link className="btn btn-dark mr-2" to="/benevoles" exact>Benevoles</Link>
                     <Link className="btn btn-dark mr-2" to="/partenaires" exact>Partenaires</Link>
 
                     <Link className="btn btn-dark mr-2" to="/login" exact>
